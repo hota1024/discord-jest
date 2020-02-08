@@ -1,0 +1,10 @@
+/src
+/.nyc_output
+/coverage
+/tests
+/.eslintignore
+/.eslintrc
+/.prettierrc
+/jest.config.js
+/webpack.config.ts
+/uml

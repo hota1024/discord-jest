@@ -1,0 +1,42 @@
+{
+  "name": "discord-jest",
+  "version": "1.0.0",
+  "description": "Discord Jest testing library.",
+  "main": "lib/index.js",
+  "types": "types/src",
+  "author": "hota1024",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "webpack",
+    "production": "webpack --mode production",
+    "watch": "webpack --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "nyc": "nyc npm test",
+    "codecov": "npm run nyc && nyc report --reporter=text-lcov && codecov",
+    "publish-npm": "npm run production && yarn publish"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/webpack": "^4.41.5",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "codecov": "^3.6.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "nyc": "^15.0.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
